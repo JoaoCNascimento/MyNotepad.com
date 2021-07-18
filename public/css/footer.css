@@ -1,0 +1,22 @@
+@font-face {
+    font-family: Segoe UI;
+    src: url("../fonts/segoe-ui.otf");
+}
+
+footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+    left: 0;
+    right: 0
+}
+
+small {
+    align-self: center;
+    font-family: Segoe UI;
+    text-align: center;
+    color: rgba(51, 51, 51, 0.822);
+    font-size: 15px;
+}

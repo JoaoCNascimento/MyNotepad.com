@@ -1,0 +1,122 @@
+@font-face {
+    font-family: gotham-bold;
+    src: url("../fonts/gotham-bold.otf");
+}
+
+@font-face {
+    font-family: gotham;
+    src: url("../fonts/gotham-light.ttf");
+}
+
+@font-face {
+    font-family: Segoe UI;
+    src: url("../fonts/segoe-ui.otf");
+}
+
+#main-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#data-container {
+    margin: auto 25px;
+    display: flex;
+    flex-direction: column;
+    height: 380px;
+    width: 500px;
+    justify-content: space-between;
+    margin: 25px auto;
+    border: 1px solid rgba(51, 51, 51, 0.432);
+    padding: 25px;
+}
+
+h2 {
+    font-family: gotham-bold;
+    text-align: center;
+}
+
+p {
+    font-family: gotham;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+span {
+    font-family: gotham-bold;
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 15px;
+    font-family: gotham-bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#btn-delete {
+    background-color: red;
+    border-radius: 25px;
+    width: 100%;
+    align-self: center;
+}
+
+#alert {
+    display: flex;
+    flex-direction: column;
+}
+
+#double-btn {
+    margin-top: 5px;
+    display: flex;
+    width: 100%;
+}
+
+.btn-double {
+    width: 50%;
+}
+
+.confirm {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: rgb(35, 201, 20);
+}
+
+.cancel {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: yellow;
+    color: rgb(51, 51, 51);
+}
+
+.confirm:hover {
+    background-color: rgb(21, 143, 10);
+}
+
+.cancel:hover {
+    background-color: rgb(204, 204, 0);
+}
+
+label {
+    font-family: gotham;
+    margin-bottom: 5px;
+}
+
+input {
+    font-family: Segoe UI;
+    font-size: 0.9rem;
+    padding: 5px;
+}
+
+.error {
+    margin: 5px auto;
+    font-family: gotham;
+    color: red;
+}
+
+@media screen and (max-width: 580px) {
+    #data-container {
+        width: 80%;
+    }
+}

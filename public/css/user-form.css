@@ -1,0 +1,242 @@
+@font-face {
+    font-family: gotham;
+    src: url("../fonts/gotham-light.ttf");
+}
+
+@font-face {
+    font-family: gotham-bold;
+    src: url("../fonts/gotham-bold.otf");
+}
+
+@font-face {
+    font-family: Segoe UI;
+    src: url("../fonts/segoe-ui.otf");
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main-container,
+form,
+#form,
+#note-body {
+    display: flex;
+    flex-direction: column;
+}
+
+form,
+#form {
+    margin: 20px auto;
+    width: 500px;
+}
+
+form {
+    height: 500px;
+}
+
+#form {
+    height: 50vh;
+}
+
+#login-form {
+    height: 300px;
+}
+
+
+
+label {
+    font-weight: 300;
+    font-family: gotham;
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+span {
+    font-family: gotham-bold;
+}
+
+input,
+select {
+    padding: 5px;
+    height: 40px;
+    vertical-align: middle;
+    font-size: 1rem;
+    font-family: Segoe UI, sans-serif, Tahoma, Geneva;
+    margin: 5px 0px 10px;
+}
+
+#btn-register {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border: 2px solid white;
+
+    border-radius: 20px;
+    padding: 10px;
+    font-family: gotham;
+
+    font-weight: 300;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+#btn-register:hover {
+    background-color: white;
+    color: rgb(51, 51, 51);
+    border: 2px solid rgb(51, 51, 51);
+}
+
+h2 {
+    text-align: center;
+    font-family: gotham;
+    font-weight: 300;
+    margin: 40px 20px 20px;
+}
+
+a {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    font-family: gotham;
+    text-align: center;
+    color: rgb(255, 44, 44);
+    margin-bottom: 15px;
+}
+
+/*NOTE CREATION CSS*/
+
+#note-header,
+#note-content,
+#note-header input,
+#note-content textarea {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+
+}
+
+#title {
+    font-family: gotham-bold;
+    padding: 30px 10px;
+    font-size: 1.55rem;
+    background-color: rgb(207, 207, 119);
+    height: 20%;
+}
+
+#content {
+    height: 80%;
+    padding: 10px;
+    font-family: gotham;
+    font-weight: 300;
+    font-size: 1.4rem;
+    background-color: rgb(255, 255, 167);
+    resize: none;
+}
+
+#title:disabled {
+    color: black;
+}
+
+#content:disabled {
+    color: black;
+}
+
+#title:focus,
+#content:focus {
+    border: none;
+    outline: none;
+}
+
+.btn-double {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.save-cancel {
+    display: none;
+}
+
+.btn-double-left, .btn-double-right {
+    width: 50%;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border: 2px solid white;
+
+    padding: 10px;
+    font-family: gotham;
+
+    font-weight: 300;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.btn-double-left {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: rgb(255, 244, 91);
+    color: rgb(51, 51, 51);
+}
+
+.btn-double-right {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: rgb(253, 48, 48);
+}
+
+.btn-double-left:hover {
+    background-color: rgb(255, 200,30);
+}
+
+.btn-double-right:hover {
+    background-color: rgb(255, 20, 20);
+} 
+
+@media screen and (max-width: 540px) {
+
+    form, #form {
+        width: 95%;
+        align-self: center;
+    }
+
+    input, button {
+        align-self: center;
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 4.6vw
+    }
+ 
+}
+
+@media screen and (max-width: 380px) {
+    label, input {
+        font-size: 4.5vw;
+    }
+
+    #note-header input {
+        padding: 20px 10px;
+        font-size: 4.5vw;
+    }
+
+    #note-content textarea {
+        font-size: 4vw;
+    }
+}

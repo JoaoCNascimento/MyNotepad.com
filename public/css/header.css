@@ -1,0 +1,35 @@
+@font-face {
+    font-family: Kristen ITC;
+    src: url("../fonts/kristen-itc.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: Kristen ITC;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+h1:hover {
+    cursor: pointer;
+}
+
+#header {
+    background-color: rgb(51, 51, 51);
+    padding: 25px;
+}
+
+@media screen and (max-width: 380px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    #header {
+        padding: 15px;
+    }
+}

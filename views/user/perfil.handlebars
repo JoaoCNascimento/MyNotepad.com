@@ -1,0 +1,28 @@
+<head>
+    <link rel="stylesheet" href="../../public/css/user_profile.css">
+</head>
+
+{{>nav}}
+
+<div id="main-container">
+    <div id="data-container">
+        <h2>Meus dados</h2>
+        <p> <span>Nome:</span> {{user.name}}</p>
+        <p><span>Email:</span> {{user.email}}</p>
+        <p><span>Data de nascimento:</span> {{user.birthDate}}</p>
+
+        <div id="alert">
+            <label for="password">Para excluir a sua conta, por favor, digite a sua senha.</label>
+            <input type="password" name="password" id="password">
+            <div class="error message"></div>
+            <div id="double-btn">
+                <button class="confirm btn-double">Confirmar</button>
+                <button class="cancel btn-double">Cancelar</button>
+            </div>
+        </div>
+
+        <button id="btn-delete">Excluir conta</button>
+    </div>
+</div>
+
+<script src="../../public/js/request_validation.js"></script>

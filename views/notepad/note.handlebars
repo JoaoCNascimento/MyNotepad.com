@@ -1,0 +1,25 @@
+<head>
+    <link rel="stylesheet" href="../../public/css/user-form.css">
+</head>
+{{>nav}}
+<form id="form">
+    <div id="note-header"><input type="text" name="title" id="title" maxlength="40" placeholder="Título da anotação">
+    </div>
+    <div id="note-content"><textarea name="content" rows="25" id="content" maxlength="500"
+            placeholder="Hoje eu irei..."></textarea>
+    </div>
+    <label for="color_picker">Cor da anotação</label>
+    <select name="color" id="color_picker">
+        <option value="Yellow">Amarelo (padrão)</option>
+        <option value="Blue">Azul</option>
+        <option value="Red">Vermelho</option>
+        <option value="Black">Preto</option>
+        <option value="Green">Verde</option>
+        <option value="Pink">Rosa</option>
+    </select>
+    <div class="error message"></div>
+    <button id="btn-register">Salvar</button>
+</form>
+
+<script src="../../public/js/noteblock_edit.js" type="text/javascript"></script>
+<script src="../../public/js/note_submit.js" type="text/javascript"></script>

@@ -1,0 +1,51 @@
+<head>
+    <link rel="stylesheet" href="../../public/css/user-form.css">
+</head>
+{{>nav}}
+<div id="form">
+    <p id="noteId" hidden>{{note._id}}</p>
+    <div id="note-header"><input type="text" name="title" id="title" maxlength="40" placeholder="Título da anotação"
+            value="{{note.title}}" disabled>
+    </div>
+    <div id="note-content"><textarea name="content" rows="25" id="content" maxlength="500" placeholder="Hoje eu irei..."
+            disabled>{{note.content}}</textarea>
+    </div>
+
+    <h2 hidden>Anotação criada em: {{note.createdAt}}</h2>
+
+    <label for="color_picker">Cor da anotação</label>
+    <select name="color" id="color_picker" disabled>
+        <option value="Yellow" {{#if (switchColor note.color colors.Yellow )}} selected="selected" {{else}}{{/if}}>
+            Amarelo (padrão)
+        </option>
+        <!--Color Ending-->
+        <option value="Blue" {{#if (switchColor note.color colors.Blue )}} selected="selected" {{else}}{{/if}}>Azul
+        </option>
+        <!--Color Ending-->
+        <option value="Red" {{#if (switchColor note.color colors.Red )}} selected="selected" {{else}}{{/if}}>Vermelho
+        </option>
+        <!--Color Ending-->
+        <option value="Black" {{#if (switchColor note.color colors.Black )}} selected="selected" {{else}}{{/if}}>Preto
+        </option>
+        <!--Color Ending-->
+        <option value="Green" {{#if (switchColor note.color colors.Green )}} selected="selected" {{else}}{{/if}}>Verde
+        </option>
+        <!--Color Ending-->
+        <option value="Pink" {{#if (switchColor note.color colors.Pink )}} selected="selected" {{else}}{{/if}}>Rosa
+        </option>
+        <!--Color Ending-->
+    </select>
+    <div class="error message"></div>
+
+    <div class="btn-double edit-remove">
+        <button class="btn-double-left edit"> <i class="fa fa-edit"></i> Editar</button>
+        <button class="btn-double-right remove"> <i class="fa fa-trash"></i> Excluir</button>
+    </div>
+    <div class="btn-double save-cancel">
+        <button class="btn-double-left save"> <i class="fa fa-save"></i> Salvar</button>
+        <button class="btn-double-right cancel"> <i class="fa fa-times"></i> Cancelar</button>
+    </div>
+
+</div>
+<script src="../../public/js/note_edit_block.js"></script>
+<script src="../../public/js/note_edit_cancel.js"></script>
