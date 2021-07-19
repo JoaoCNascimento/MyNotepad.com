@@ -17,3 +17,5 @@ Um projeto feito para exercitar conceitos fundamentais de desenvolvimento backen
 ## O que é o mynotepad?
 
 O mynotepad é uma plataforma online feita para a criação e o gerenciamento de anotações.
+
+![Imagem da homepage](project_details/screenshots/home_page.jpg)
