@@ -27,7 +27,9 @@ O mynotepad é uma plataforma online feita para a criação e o gerenciamento de
 
 O mynotepad pode ser acessado através deste link: **https://mynotepad-production.herokuapp.com/**
 
-### Passo a passo / Step-by-step
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### Guia do usuário
 
 #### Primeiros passos
 ![Página de login](project_details/screenshots/login_page.jpg)
